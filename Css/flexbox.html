@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .screen {
+            height: 100vh;
+            background-color: yellow;
+            display: flex;
+           /* flex-direction: row-reverse;*/
+            /*reverse the contailer*/
+            /* flex-direction: column-reverse;*/
+            /* flex-direction: row;*/
+            /*   flex-wrap: wrap;*/
+               flex-wrap: wrap;
+            /*  justify-content: start;*/
+            justify-content: start;
+            /*for main axis*/
+            align-items: start;
+            align-content: start;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            font-size: larger;
+            border: 2px solid black;
+
+        }
+
+        #box1 {
+            background-color: red;
+            /* order: 3; */
+          /*  height: 80px;
+            width: 150px;*/
+
+        }
+
+        #box2 {
+            /*height: 120px;
+            width: 150px;*/
+            background-color: aqua;
+
+
+        }
+
+        #box3 {
+         /*   height: 100px;
+            width: 150px;*/
+            background-color: orangered;
+
+        }
+
+        #box4 {
+         /*   height: 50px;
+            width: 150px;*/
+            background-color: pink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+
+    </div>
+    <div class="screen">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+
+    </div>
+</body>
+
+</html>

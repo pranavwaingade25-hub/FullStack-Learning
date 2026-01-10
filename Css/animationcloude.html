@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(#87ceef, #fff);
+            height: 97.6vh;
+        }
+
+        .cloud {
+            width: 150px;
+            height: 80px;
+            background: #fff;
+            position: absolute;
+            top: 200px;
+            left: -250px;
+            border-radius: 20px;
+            box-shadow: -60px -20px rgba(205, 198, 198, 0.667), 30px -20px #a29f9fb7, 90px 10px #9b9696d7;
+            animation: movecloud 5s linear infinite;
+            animation-delay: 3s;
+        }
+
+        @keyframes movecloud {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cloud"></div>
+    <div class="cloud1"></div>
+
+</body>
+
+</html>

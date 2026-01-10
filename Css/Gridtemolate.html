@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .webpage {
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 190px 190px 190px 190px 190px 190px 190px ;
+            grid-template-rows: 150px 150px 130px 150px;
+            grid-template-areas:"items1 items1 items1 items1 items2 items2 items2"
+                                "items3 items3 items3 items4 items2 items2 items2"
+                                "items3 items3 items3 items5 items5 items6 items6"
+                                "items3 items3 items3 items7 items7 items7 items7";
+            gap: 10px;
+        }
+        .Item{
+            height: 50px;
+        }
+
+        .items1{
+            background-color: yellowgreen;
+            grid-area: items1;
+        }
+        .items2{
+            background-color:orange;
+            grid-area: items2;
+        }
+        .items3{
+            background-color: rgb(255, 184, 53);
+            grid-area: items3;
+        }.items4{
+            background-color: pink;
+            grid-area: items4;
+        }.items5{
+            background-color: white;
+            grid-area: items5;
+            grid-template-columns: 100px 100px 100px 100px;
+            align-content: center;
+            display: grid;
+            grid-template-areas: "circle1 circle3 circle2 circle4";
+        }.items6{
+            background-color: rgb(150, 188, 74);
+            grid-area: items6;
+        }.items7{
+            background-color: orangered;
+            grid-area: items7;
+        }
+        .circle1{
+            grid-area: circle1;
+        }
+        .circle2{
+            grid-area: circle3;
+            align-self:center ;
+        }
+        .circle3{
+            grid-area: circle2;
+        }
+        .circle4{
+            grid-area: circle4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="webpage">
+        <div class="items1" class="Item"></div>
+        <div class="items2" class="Item"></div>
+        <div class="items3" class="Item"></div>
+        <div class="items4" class="Item"></div>
+        <div class="items5" class="Item">
+            <div class="circle1" style="width: 80px; height: 80px; background-color: violet; border-radius: 100%;"></div>
+            <div class="circle2" style="width: 80px; height: 80px; background-color: rgb(130, 238, 224); border-radius: 100%;"></div>
+            <div class="circle3" style="width: 80px; height: 80px; background-color: rgb(130, 173, 238); border-radius: 100%;"></div>
+            <div class="circle4" style="width: 80px; height: 80px; background-color: violet; border-radius: 100%;"></div>
+        </div>
+        <div class="items6" class="Item"></div>
+        <div class="items7" class="Item"></div>
+    </div>
+</body>
+
+</html>

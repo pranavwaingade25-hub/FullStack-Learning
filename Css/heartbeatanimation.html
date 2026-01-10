@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heart{
+            font-size: 150px;
+            border-radius: 100%;
+            overflow: hidden;
+            animation-name: heartbreathing;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        @keyframes heartbreathing {
+            /* 0%{
+                zoom: 150%;
+
+            }
+            25%{
+                zoom:135%;
+            }
+            50%{
+                zoom:120%;
+
+            }
+            75%{
+                zoom:115%;
+            }
+            100%
+            {
+                zoom:90%;
+            } */
+            from{
+                transform: scale(1.7);
+            }
+            to{
+                transform: scale(1.6);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">
+             ❤️
+        </div>
+    </div>
+    
+</body>
+</html>
