@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .webpage {
+            width: 100%;
+            height: 725px;
+            background-color: rgba(189, 179, 179, 0.389);
+
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: 55px 600px;
+            grid-template-columns: 240px 250px 250px 250px 230px 260px;
+            grid-template-areas: "side nav nav nav nav nav"
+                "side mid mid last last last";
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 55px;
+            background-color: white;
+            grid-area: nav;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .leftnav {
+            width: 50%;
+            display: flex;
+            gap: 10px;
+            font-size: larger;
+            padding-left: 15px;
+        }
+
+        .rightnav {
+            font-size: larger;
+            height: 100%;
+            width: 50%;
+            padding-right: 15px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .Button {
+            height: 100%;
+            height: 45px;
+            width: 20%;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+        }
+
+        .sideContainer {
+            background-color: white;
+            height: 720px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            grid-area: side;
+        }
+
+        .top {
+            /* border: 1px solid black; */
+            height: 60%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo {
+            height: 15%;
+        }
+
+        .functions {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .logo {
+
+            padding-left: 25px;
+        }
+
+        .ineerfunctions {
+            padding-left: 15px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .down {
+            height: 40%;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        .account {
+            display: flex;
+            width: 100%;
+            padding-left: 15px;
+            justify-content: start;
+            align-content: center;
+        }
+
+        .midContainer {
+            width: 500px;
+            height: 650px;
+            /* background-color: aquamarine; */
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            grid-area: mid;
+        }
+
+        .Container {
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow: hidden;
+
+        }
+
+        .lastContainer {
+            grid-area: last;
+            height: 650px;
+            width: 740px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 15px;
+
+        }
+
+        .Containertop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 15px;
+        }
+
+        .Containermid {
+            width: 100%;
+            height: 12%;
+            align-content: center;
+            display: flex;
+            gap: 5px;
+
+        }
+
+        .time {
+            border-left: 1px solid gray;
+            align-content: center;
+            padding-left: 5px;
+            height: 100%;
+
+        }
+
+        .Containermenu {
+            height: 30%;
+            /* border: 1px solid; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 15px;
+        }
+
+        .contact {
+            display: flex;
+            padding: 0px 10px;
+            justify-content: start;
+            color: grey;
+        }
+
+        .contact :hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="webpage">
+        <div class="nav">
+            <div class="leftnav">
+                <div class="div1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg> Back |
+                </div>
+                <div class="div2">
+                    <a href="">Supplier</a> /
+                    <a href="">Carditonal Health</a>
+                </div>
+            </div>
+            <div class="rightnav">
+                <a href="">You have unsaved changes</a>
+                <a href="" class="Button">Saved changes</a>
+
+            </div>
+
+        </div>
+        <div class="sideContainer">
+            <div class="top">
+                <div class="logo">
+                    <img src="" alt="Logo">
+                </div>
+                <div class="functions">
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                            </svg>
+
+                        </div>
+                        <p>Home</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-boxes" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
+                            </svg>
+
+                        </div>
+                        <p>Produts</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z" />
+                            </svg>
+
+                        </div>
+                        <p>Document</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                            </svg>
+
+                        </div>
+                        <p>Trainginh</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-truck" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                            </svg>
+
+                        </div>
+                        <p>Supplier</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-building-check" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514" />
+                                <path
+                                    d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z" />
+                                <path
+                                    d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                            </svg>
+
+                        </div>
+                        <p>Anayliysis</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z" />
+                                <path
+                                    d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
+                            </svg>
+
+                        </div>
+                        <p>Quality events</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+                            </svg>
+
+                        </div>
+                        <p>Changes</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+
+                        </div>
+                        <p>Parts</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="down">
+                <div class="functions">
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+                            </svg>
+
+                        </div>
+                        <p>Changelog</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-boxes" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
+                            </svg>
+
+                        </div>
+                        <p>Settings</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z" />
+                            </svg>
+
+                        </div>
+                        <p>Notifications</p>
+                    </div>
+                    <div class="ineerfunctions">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                            </svg>
+
+                        </div>
+                        <p>Tasks</p>
+                    </div>
+
+                </div>
+                <div class="account">
+                    <img src="" alt="img" style="width: 20%;">
+                    <div class="personal">
+                        <div class="name">
+                            <h3>Jhonlick</h3>
+                            <p>nbslcc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="midContainer">
+            <div class="Container" style="height: 40%;">
+                <div class="Containertop">
+                    <h2>Cardinal Health</h2>
+                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path
+                                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                        </svg></div>
+                </div>
+                <div class="Containermid">
+                    <a href=""
+                        style="text-align: center; background-color: orange; color: white; border-radius: 20px; width:100px; padding: 5px 5px;">Pending</a>
+                    <div class="time">
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <select name="" id="" style="border: none;">
+                                <option value="V2.5">V2.5</option>
+                                <option value="V2.6">V2.6</option>
+                                <option value="v2.7">V2.7</option>
+                                <option value="v2.8">V2.8</option>
+                                <option value="v2.9">V2.9</option>
+                                <option value="v3  ">V2.10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="Containermenu">
+                    <div class="type menu">
+                        <p>Type</p>
+                        <h3>Materials</h3>
+                    </div>
+                    <div class="level menu">
+                        <p>Risk Level</p>
+                        <h3>Low</h3>
+                    </div>
+                    <div class="supplier menu">
+                        <p>Supplier Status</p>
+                        <h3 style="color: grey;">Pending</h3>
+                    </div>
+                </div>
+                <div class="Button" style="width: 90%; margin: 10px 15px; "><a href=""
+                        style="color: white; font-size: larger;">Send for Approval</a></div>
+            </div>
+            <div class="Container" style="height: 20%;">
+                <div class="Containertop">
+                    <h3>Contact Details</h3>
+                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path
+                                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                        </svg></div>
+                </div>
+                <div class="Containermid" style="flex-direction: column;">
+                    <div class="contact">
+                        <div class="icons" style="width: 5%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                        </div>
+                        <p>3981 xyzzz Lorem ipsum dolor sit amet , Lorem ipsum dolor sit</p>
+
+
+                    </div>
+                    <div class="contact">
+                        <div class="icons" style="width: 5%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                        </div>
+                        <p>91+ 7559215929</p>
+                    </div>
+                    <div class="contact">
+                        <div class="icons" style="width: 5%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                            </svg>
+                        </div>
+                        <p> info@cardinathelath</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Container" style="height: 20%; gap: 5px;">
+                <div class="Containertop">
+                    <h3>Notes</h3>
+                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path
+                                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                        </svg></div>
+                </div>
+                <div class="Containermid" style="padding: 0px 10px;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis omnis quod vitae
+                        blanditiis quo placeat nesciunt tenetur, neque voluptatem!</p>
+                </div>
+
+                <div class="Containermid" style="padding: 35px 10px;">
+                    <select name="" id="" style="border: 1px solid grey; width: 90%; height: 25px;">
+
+                        <option value="V2.5">Standaterd Procedre.pdf</option>
+                        <option value="V2.6">V2.6</option>
+                        <option value="v2.7">V2.7</option>
+                        <option value="v2.8">V2.8</option>
+                        <option value="v2.9">V2.9</option>
+                        <option value="v3  ">V2.10</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="lastContainer">
+            <div class="Container" style="height: 25%;">
+                <div class="Containertop">
+                    <h3>Policy Suggestions</h3>
+                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path
+                                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                        </svg></div>
+                </div>
+                <div class="Containermenu">
+                    <div class="type menu">
+                        <p>Type</p>
+                        <h3
+                            style="background-color: rgba(0, 128, 0, 0.401); color: green; width: 130px; height: 25px; text-align: center; border-radius:20px ;">
+                            SATISFIED</h3>
+                    </div>
+                    <div class="level menu">
+                        <p>Risk Level</p>
+                        <h3
+                            style="background-color: rgba(255, 166, 0, 0.407); color:orange; width: 150px; height: 25px; text-align: center; border-radius:20px ;">
+                           NOT SATISFIED</h3>
+                    </div>
+                    <div class="supplier menu">
+                        <p>Supplier Status</p>
+                        <h3
+                            style="background-color: rgba(0, 128, 0, 0.401); color: green; width: 130px; height: 25px; text-align: center; border-radius:20px ;">
+                            SATISFIED</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Container" style="height: 32%;">
+                <div class="Containertop" >
+                    <h3>Supplier Document</h3>
+                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path
+                                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                        </svg></div>
+                </div>
+                <div class="Containermid" style="padding: 5px 10px; display: flex; flex-direction: column; gap: 15px; border-bottom:  1px solid grey; height: 100px; padding-bottom: 15px; border-bottom: 1px solid grey;">
+                    <select name="" id="" style="border: 1px solid rgba(128, 128, 128, 0.815); width: 90%; height: 40px; border-radius: 10px;">
+                        <option value="V2.5">Standaterd Procedre.pdf</option>
+                        <option value="V2.6">V2.6</option>
+                        <option value="v2.7">V2.7</option>
+                        <option value="v2.8">V2.8</option>
+                        <option value="v2.9">V2.9</option>
+                        <option value="v3  ">V2.10</option>
+                    </select>
+                    <select name="" id="" style="border: 1px solid rgba(128, 128, 128, 0.815); width: 90%; height: 40px; border-radius: 10px;">
+
+                        <option value="V2.5">Standaterd Procedre.pdf</option>
+                        <option value="V2.6">V2.6</option>
+                        <option value="v2.7">V2.7</option>
+                        <option value="v2.8">V2.8</option>
+                        <option value="v2.9">V2.9</option>
+                        <option value="v3  ">V2.10</option>
+                    </select>
+                </div>
+                <div class="Containermenu">
+                    <div class="type menu">
+                        <p style="color: grey;">SUPPLIER QUALIFICATION</p>
+                        <p style="color: grey;">Not Required</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Container" style="height: 25%; padding: 15px; width: 100%;">
+                <div style="display: flex; flex-direction:row ; gap: 10px;">
+                    <h3>Audits</h3> <p style="color: navy; background-color: skyblue; padding: 1px 15px ; border-radius: 15px;">Next:MAR 31,2023</p>
+                </div>
+                <div class="Containertop" style="border-bottom: 1px solid grey;">
+                    <p>Audit Frequency:Every 3 Months</p>
+                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                            <path
+                                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                        </svg></div>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+</body>
+
+</html>
