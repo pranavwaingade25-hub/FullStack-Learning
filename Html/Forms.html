@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learning Forms Today!!!!</h1>
+    <center>
+      <form action="Dumy.html">
+        <div>
+          <label for="Name">Name :</label>
+          <input type="text" placeholder="Enter Your name" id="Name" />
+        </div>
+        <br />
+
+        <div>
+          <label for="Pass">Password :</label>
+          <input
+            type="password"
+            placeholder="Enter Your Password"
+            id="Pass"
+            minlength="6"
+            maxlength="10"
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="mail">Email : </label>
+          <input
+            type="email"
+            placeholder="Enter Your email"
+            id="mail"
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="date">Date :</label>
+          <input type="date" id="date" />
+        </div>
+        <div>
+          <label for="time">Time: </label>
+          <input type="time"  id="time" />
+        </div>
+        <br />
+
+        <div>
+          <label for="age">Age :</label>
+          <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+        <br />
+
+        <div>
+          <label for="">Feedbock of dificulty level: </label>
+          <input type="range" value="100">
+        </div>
+ 
+        <div>
+          <label for="">Gender : </label>
+          Male <input type="radio" name="Gender" value="Male" /> Female
+          <input type="radio" name="Gender" value="Female" />
+        </div>
+        <br />
+        <div>
+          <label for="job">JOB:</label>
+           <select name="JOB" id="job">
+            <option value=""></option>
+            <option value="GOOGLE">Google</option>
+            <option value="NETFLIX">Netflix</option>
+           </select>
+        </div>
+         
+        <div>
+           <label for="Egliable "> are you Egliable</label>
+           <input type="checkbox"  id="Egliable" checked/>
+        </div>
+        <br>
+
+        <div>
+          <label for="image">your Document: </label>
+          <input type="file" id="image" accept=".pdf, .jpg" />
+        </div>
+        <br>
+
+        <div>
+          <label for="link">portoligo link: </label>
+          <input type="url" id="link">
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </form>
+    </center>
+  </body>
+</html>
