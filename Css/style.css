@@ -1,0 +1,14 @@
+*{
+    background-color: cadetblue;
+}
+
+#txt{
+         color: whitesmoke;
+    }
+    
+img{
+        border-radius: 15%;
+        background-color: brown ;
+        height: 700;
+        width: 700;
+    }
