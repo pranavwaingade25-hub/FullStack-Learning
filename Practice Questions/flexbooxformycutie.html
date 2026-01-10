@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px ;
+            /* flex-wrap: wrap; */
+        }
+        .dabba {
+            height: 100px;
+            width: 100px;
+        }
+
+        #A {
+            background-color: aqua;
+        }
+
+        #B {
+            background-color: blueviolet;
+        }
+
+        #C {
+            background-color: pink;
+            /* align-self: flex-end; */
+        }
+
+        #D {
+            background-color: blanchedalmond;
+        }
+        #E {
+            background-color: red;
+            order: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="dabba" id="A"></div>
+        <div class="dabba" id="B"></div>
+        <div class="dabba" id="C"></div>
+        <div class="dabba" id="D"></div>
+        <div class="dabba" id="E"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .slider-container {
+            width: 80%;
+            /* Adjust width as needed */
+            max-width: 600px;
+            height: 400px;
+            /* Adjust height as needed */
+            overflow: hidden;
+            /* Hides images outside the viewable area */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            width: 400%;
+            /* 100% * number of images (4 in this case) */
+            height: 100%;
+            animation: slide 16s infinite;
+            animation-direction: alternate;
+            /* 4s per image * 4 images = 16s total animation time */
+        }
+
+        .slider img {
+            width: 25%;
+            /* 100% / number of images (4) */
+            height: 100%;
+            object-fit: cover;
+            /* Ensures images cover the area without distortion */
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+                /* Show image 1 */
+            }
+
+            20% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-25%);
+                /* Show image 2 */
+            }
+
+            45% {
+                transform: translateX(-25%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+                /* Show image 3 */
+            }
+
+            70% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-75%);
+                /* Show image 4 */
+            }
+
+            95% {
+                transform: translateX(-75%);
+            }
+
+            100% {
+                transform: translateX(-75%);
+                /* Back to image 1 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="Timpass/logo.png" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="Timpass/logo.png" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="" alt="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Pacifico&family=Story+Script&display=swap"
+        rel="stylesheet">
+    <title>Chatbot login</title>
+
+    <style>
+        /** {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #box1 {
+            border: 4px;
+            border-style: solid;
+            border-color: rgba(4, 125, 146, 0.686);
+            height: 380px;
+            width: 500px;
+            border-radius: 10%;
+            margin: auto;
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        #Heading {
+            color: aqua;
+            font-size: xx-large;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 30px;
+        }
+
+        #NAME {
+            color: aliceblue;
+            font-size: x-large;
+            margin-left: 15px;
+
+        }
+
+        #Phone {
+            color: aliceblue;
+            font-size: x-large;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+
+        #Password {
+            color: aliceblue;
+            font-size: x-large;
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+
+        #submit {
+            color: black;
+            background-color: white;
+            border-radius: 10%;
+            font-size: x-large;
+            margin-top: 15px;
+            margin-left: 200px;
+        }
+
+        #Reset {
+            color: black;
+            background-color: white;
+            border-radius: 10%;
+            font-size: x-large;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        #signin {
+            color: aqua;
+            font-size: small;
+            margin-top: 15px;
+            margin-left: 150px;
+        }*/
+        body {
+            background-color: #19183B;
+        }
+
+        #box1 {
+            border: 1px solid white;
+            width: max-content;
+            margin: auto;
+            margin-top: 150px;
+            padding: 10px;
+            font-size: x-large;
+            background-color: #A1C2BD;
+            border-radius: 10px;
+        }
+
+        #box1:hover {
+            box-shadow: 0 0 90px 5px rgba(253, 247, 247, 0.5);
+            /* box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.492);*/
+        }
+
+        #box2 {
+            background-color: #A1C2BD;
+            padding: 10px;
+            /* position: relative;
+            top: 0px;*/
+
+        }
+
+        .A:hover {
+            box-shadow: 2px 2px rgba(55, 55, 55, 0.216);
+            transform: translate(-5px);
+        }
+
+        input {
+            background-color: #A1C2BD;
+            border: none;
+            font-weight: 500;
+        }
+
+        #Heading {
+            position: relative;
+            border-bottom: 2px solid #19183B;
+            border-radius: 10px;
+            width: 200px;
+            left: 85px;
+            padding: auto;
+            padding-left: 10px;
+            font-size: xx-large;
+            /* font-family: "Story Script", sans-serif;
+            font-weight: 400;
+            font-style: normal;*/
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+            box-shadow: 2px 2px black;
+        }
+
+        /*       .gradient-text {
+        font-size: 4em; /* Adjust as needed */
+        /*font-weight: bold;
+        /*  background-image: linear-gradient(to left, black, violet,black);
+        -webkit-background-clip: text; /* For WebKit browsers */
+        /*background-clip: text;
+        color: transparent;
+        }*/
+         #Heading:hover {
+            transform: translate(-5px);
+        }
+        #NAME {
+            font-size: x-large;
+            position: relative;
+            font-family: "Epunda Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        #Phone {
+            font-size: x-large;
+            position: relative;
+            left: 17px;
+            font-family: "Epunda Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        #Password {
+            font-size: x-large;
+            position: relative;
+            left: 8px;
+            font-family: "Epunda Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        button {
+            height: 35px;
+            width: 90px;
+            font-size: large;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: "Epunda Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            position: relative;
+            left: 175px;
+            right: 15px;
+
+        }
+
+        button:hover {
+            box-shadow: 1px 1px rgb(55, 55, 55);
+            transform: translate(-5px);
+        }
+
+        a {
+            font-family: "Epunda Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            text-decoration: none;
+            font-size: smaller;
+            position: relative;
+            top: 10px;
+            left: 299px;
+            border-radius: 10px;
+            width: max-content;
+        }
+
+        a:hover {
+            transform: translate(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="box1">
+        <div id="box2">
+            <div>
+                <h3 id="Heading" class="gradient-text">login Account</h3>
+            </div>
+            <div id="NAME" class="A">
+                <label for="NAME">Full Name:</label>
+                <input type="text" placeholder="Enter Name" id="NAME" required />
+            </div><br>
+            <div id="Phone" class="A">
+                <label for="Phone">Contact:</label><input type="tel" placeholder="Contact Number" id="Phone">
+            </div><br>
+            <div id="Email" class="A">
+                <label for="Email">Email:</label><input type="email" placeholder="Contact Number" id="Phone">
+            </div><br>
+            <div id="Password" class="A">
+                <label for="Password">Password:</label><input type="password" placeholder="Enter Password" id="Password"
+                    maxlength="6" required>
+            </div><br>
+            <button type="submit" id="submit">submit</button>
+            <button type="reset" id="Reset">Reset</button><br>
+            <a href="e:\Pranav\Full stack\Timpass\signin.html" id="signin" class="A">Sign in </a>
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>
